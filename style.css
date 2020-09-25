@@ -1,83 +1,201 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.landing-page {
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
   width: 100%;
-  height: 100vh;
-  background: #000;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.landing-page::after {
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.section-title span {
+  color: crimson;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
+/* Home Section */
+#home {
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#home::after {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
   height: 100%;
-  background: url(/images/bg.jpg) no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  animation: anim 25s linear infinite;
-}
-
-@keyframes anim{
-  50% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.page-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
   width: 100%;
-  max-width: 800px;
+  background-color: black;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#home h1 {
+  display: block;
+  width: fit-content;
+  font-size: 3rem;
+  position: relative;
+  color: white;
+}
+
+/* About Me Section */
+#about .about {
+  flex-direction: column-reverse;
   text-align: center;
-  padding: 0 40px;
-  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
 }
 
-.page-content h1 {
-  color: #ff7979;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 900;
+#about .col-left {
+  width: 250px;
+  height: 360px;
+}
+
+#about .col-right {
+  width: 100%;
+}
+
+#about .col-right h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 10px;
+}
+
+#about .col-right p {
   margin-bottom: 20px;
 }
 
-.page-content p {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.page-content a {
-  display: inline-block;
-  text-decoration: none;
-  color: #ff7979;
-  border: 2px solid #ff7979;
-  text-transform: uppercase;
+#about .col-right .cta {
+  color: black;
+  margin-bottom: 50px;
   padding: 10px 20px;
-  transition: 0.4s linear;
+  font-size: 2rem;
 }
 
-.page-content a:hover {
-  color: #fff;
-  background: #ff7979;
+/* Services Section */
+#services .service {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
-.text {
-  padding: 10px;
-  text-align: justify;
+#services .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-.text div {
+#services .service-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
+
+#services .service-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, black 0%, gray 100%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#services .service-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#services .service-item h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#services .service-item p {
+  color: white;
+  text-align: left;
+}
+
+/* Media Query For Tablet Start */
+
+/* Media Query For Tablet End */
