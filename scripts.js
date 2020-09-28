@@ -1,24 +1,27 @@
-// $(document).ready(() => {
-//   $(window).scroll(() => {
-//     if (this.scrollY > 20) {
-//       $('.navbar').addClass('sticky');
-//     } else {
-//       $('.navbar').removeClass('sticky');
-//     }
-//   });
-
-//   $('.menu-toggler').click(() => {
-//     $(this).toggleClass('active');
-//     $('.navbar-menu').toggleClass('active');
-//   });
-// });
-
-const hamburger = document.querySelector(
-  '.header .nav-bar .nav-list .hamburger'
+const hamburger = document.querySelector(' .navbar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.navbar .container .nav-list ul');
+const menu_item = document.querySelectorAll(
+  '.navbar .container .nav-list ul li a'
 );
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const header = document.querySelector('.header.container');
+const navbar = document.querySelector('.navbar');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+  var scroll_position = window.scrollY;
+  if (scroll_position > 200) {
+    navbar.style.backgroundColor = 'rgb(31, 30, 30)';
+  } else {
+    navbar.style.backgroundColor = 'transparent';
+  }
+});
+
+menu_item.forEach((item) => {
+  item.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+  });
 });
