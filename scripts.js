@@ -1,12 +1,12 @@
-const hamburger = document.querySelector(' .navbar .nav-list .hamburger');
+const menu_toggler = document.querySelector(' .navbar .nav-list .menu-toggler');
 const mobile_menu = document.querySelector('.navbar .container .nav-list ul');
 const menu_item = document.querySelectorAll(
   '.navbar .container .nav-list ul li a'
 );
 const navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+menu_toggler.addEventListener('click', () => {
+  menu_toggler.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 });
 
@@ -21,7 +21,7 @@ document.addEventListener('scroll', () => {
 
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
+    menu_toggler.classList.toggle('active');
     mobile_menu.classList.toggle('active');
   });
 });

@@ -15,6 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  margin: auto;
+  padding: 0 20px;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -44,19 +49,14 @@ p {
   color: crimson;
 }
 
-/* Header section */
+/* Navbar Section */
 .navbar {
   position: fixed;
-  background-color: #29323c;
   width: 100%;
   padding: 10px 0;
   top: 0;
   z-index: 1000;
-}
-
-.container {
-  margin: auto;
-  padding: 0 20px;
+  transition: 0.3s linear;
 }
 
 .navbar .container {
@@ -65,7 +65,7 @@ p {
   align-items: center;
 }
 
-.navbar .nav-list ul {
+/* .navbar .nav-list ul {
   list-style: none;
   position: absolute;
   background-color: rgb(31, 30, 30);
@@ -117,31 +117,18 @@ p {
 
 .navbar .nav-list ul li:hover a {
   color: crimson;
-}
+} */
 
-.navbar .hamburger {
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  border: 3px solid white;
+/* .navbar .hamburger {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  border: 3px solid white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
   cursor: pointer;
-  transform: scale(0.8);
-  margin-right: 20px;
-}
-
-.navbar .hamburger:after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid white;
 }
 
 .navbar .hamburger .bar {
@@ -178,7 +165,7 @@ p {
 
 .navbar .hamburger.active .bar::after {
   top: 0;
-}
+} */
 
 /* Home Section */
 .home {
@@ -243,19 +230,18 @@ p {
   color: white;
   background: crimson;
 }
-*/
 
 /* About Section */
 
 /* End About Section */
 
 /* Media Query */
-@media screen and (max-width: 900px) {
-  #header .hamburger {
-    display: none;
+@media screen and (max-width: 980px) {
+  /* .hamburger {
+    display: block;
   }
 
-  #header .nav-list ul {
+  .nav-list ul {
     position: initial;
     display: block;
     height: auto;
@@ -273,7 +259,7 @@ p {
 
   #header .nav-list ul a:after {
     display: none;
-  }
+  } */
 
   /* Home */
   .home .content h1 {
