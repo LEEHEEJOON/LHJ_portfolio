@@ -1,89 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LHJ webiste</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">
+        <h1>LHJ WebSite</h1>
+      </div>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#education">Education</a>
+        <a href="#works">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>LHJ Website</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="brand">
-          <a href="#home" class="home-menu"></a>
-          <h1>LHJ <span>W</span>eb<span>S</span>ite</h1>
-        </div>
-        <button class="menu-toggler">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navbar-menu">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#education">Education</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="content">
+        <h1>Front-End Engineer</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+          consequuntur aperiam laudantium nemo eaque asperiores dignissimos,
+          ex, distinctio eius a esse vitae sapiente? Eos cum est pariatur
+          odit! Sapiente, soluta!
+        </p>
+        <div class="buttons">
+          <a href="#works">Portfolio</a>
         </div>
       </div>
-    </nav>
-    <!-- End Navbar -->
+    </div>
+  </section>
 
-    <!-- home Section  -->
-    <section id="home">
-      <div class="home">
-        <div class="content">
-          <h1>Front-End Engineer</h1>
+  <!-- Home -->
+  <section id="about">
+    <div class="container">
+      <h1 class="section-title">About</h1>
+      <div class="about-content">
+        <img src="images/pic.png" alt="" class="about-pic">
+        <div class="about-text">
+          <h2>Hi! I'm Darkcode</h2>
+          <h3>
+            <span>Developer</span>
+            <span>Designer</span>
+            <span>Youtuber</span>
+          </h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-            consequuntur aperiam laudantium nemo eaque asperiores dignissimos,
-            ex, distinctio eius a esse vitae sapiente? Eos cum est pariatur
-            odit! Sapiente, soluta!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed fuga eaque, culpa cupiditate animi laborum natus! Similique odio sit facilis dolorum dicta velit provident sequi iusto, est pariatur quisquam corrupti animi necessitatibus aliquid deserunt reprehenderit voluptatibus? Exercitationem deserunt fugit dicta nesciunt velit quae tempora eius praesentium odio est, voluptatem vero incidunt omnis ad iure, soluta maiores nostrum inventore alias culpa. Nihil suscipit possimus est harum accusamus impedit libero deleniti repellat.
           </p>
-          <a href="#projects">Portfolio</a>
         </div>
       </div>
-    </section>
-    <!-- End home Section  -->
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="home">
-        <div class="content">
-          <h1>Front-End Engineer</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-            consequuntur aperiam laudantium nemo eaque asperiores dignissimos,
-            ex, distinctio eius a esse vitae sapiente? Eos cum est pariatur
-            odit! Sapiente, soluta!
-          </p>
-          <a href="#projects">Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="dark">
+    <div class="container">
+      <h1 class="section-title">Services</h1>
+      <div class="services">
+        <div class="service">
+          <i class="icon fas fa-paint-brush"></i>
+          <h4>Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-pager"></i>
+          <h4>Build Websites</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-database"></i>
+          <h4>Manage Databases</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fab fa-android"></i>
+          <h4>Android Apps</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-credit-card"></i>
+          <h4>Ui Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-keyboard"></i>
+          <h4>Edit Texts</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-    </section>
-    <!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- Service Section -->
-    <section id="services"></section>
-    <!-- End Service Section -->
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h1 class="section-title">Education & Experiences</h1>
+      <div class="time-line">
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
 
-    <!-- Projects Section -->
-    <section id="projects"></section>
-    <!-- End Projects Section -->
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact"></section>
-    <!-- End Contact Section -->
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
 
-    <!-- Footer -->
-    <section id="footer"></section>
-    <!-- End Footer -->
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
 
-    <!-- script files -->
-    <script src="scripts.js"></script>
-  </body>
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="works" class="dark">
+    <div class="container">
+      <h1 class="section-title">Works</h1>
+      <div class="works">
+        <a href="images/works/1.jpg" class="work">
+          <img src="images/works/1.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/2.jpg" class="work">
+          <img src="images/works/2.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="section-title">Get in touch</h1>
+      <div class="contact-info">
+        <div class="item">
+          <i class="fas fa-mobile-alt"></i>
+          +111 111111111
+        </div>
+
+        <div class="item">
+          <i class="fas fa-envelope"></i>
+          email@address.com
+        </div>
+
+        <div class="item">
+          <i class="fas fa-map-marker-alt"></i>
+          New York, United States
+        </div>
+      </div>
+
+      <form action="#" class="contact-form">
+        <input type="text" class="nameZone" placeholder="Your Full Name">
+        <input type="email" class="emailZone" placeholder="Your Email">
+        <input type="text" class="subjectZone" placeholder="Subject">
+        <textarea class="messageZone" placeholder="Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2020 | Created & Designed By <a href="#">darkcode</a>
+      </div>
+      <div class="sm">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go Top BTN -->
+  <button class="goTop fas fa-arrow-up"></button>
+
+  <!-- script files -->
+  <script src="scripts.js"></script>
+</body>
 </html>
