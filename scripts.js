@@ -1,23 +1,24 @@
-// const hamburger = document.querySelector('.navbar .menu-toggler');
-// const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-// const menu_item = document.querySelectorAll(
-//   '.header .nav-bar .nav-list ul li a'
-// );
-// const header = document.querySelector('.header.container');
+const navbar = document.querySelector('#navbar');
+const hamburger = document.querySelector(
+  '#navbar .container .nav-bar .nav-list .hamburger'
+);
+const mobile_menu = document.querySelector(
+  '#navbar .container .nav-bar .nav-list .navbar-menu'
+);
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('active');
-//   mobile_menu.classList.toggle('active');
-// });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+});
 
-// document.addEventListener('scroll', () => {
-//   var scroll_position = window.scrollY;
-//   if (scroll_position > 50) {
-//     header.style.backgroundColor = '#29323c';
-//   } else {
-//     header.style.backgroundColor = 'transparent';
-//   }
-// });
+document.addEventListener('scroll', () => {
+  var scroll_position = window.scrollY;
+  if (scroll_position > 300) {
+    navbar.style.backgroundColor = '#29323c';
+  } else {
+    navbar.style.backgroundColor = 'transparent';
+  }
+});
 
 // menu_item.forEach((item) => {
 //   item.addEventListener('click', () => {
